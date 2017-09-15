@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example 1 - Thread Size", "Example 1 - Thread Size", "{AB26A024-5AB3-4CF5-91D3-E446B45BB9E4}"
 EndProject
@@ -9,11 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadSize", "ThreadSize\Th
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example 2 - Blocked vs. Running Threads", "Example 2 - Blocked vs. Running Threads", "{50422D1E-1BB3-4A72-ABB9-3E415F8FEC5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockedAndRunningThreads", "BlockedAndRunningThreads\BlockedAndRunningThreads.csproj", "{B1BDFCAF-D6FE-4F53-9656-30035928BF37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockedAndRunningThreads", "BlockedAndRunningThreads\BlockedAndRunningThreads.csproj", "{B1BDFCAF-D6FE-4F53-9656-30035928BF37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example 3 - Async Decompiled", "Example 3 - Async Decompiled", "{E9E434AC-9635-4DF1-808B-4AE377DB8FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDecompiled", "AsyncDecompiled\AsyncDecompiled.csproj", "{FB2704A9-87E2-4E82-918D-20B850576D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncDecompiled", "AsyncDecompiled\AsyncDecompiled.csproj", "{FB2704A9-87E2-4E82-918D-20B850576D0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example 4 - Synchronous vs. Asynchronous ASP.NET Core", "Example 4 - Synchronous vs. Asynchronous ASP.NET Core", "{66AB4C82-9003-46F9-A647-CA58A4972A31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWebApi", "AspNetCoreWebApi\AspNetCoreWebApi.csproj", "{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "WpfClient\WpfClient.csproj", "{24B10902-D4F1-4F17-95A9-2421010B6FA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +67,30 @@ Global
 		{FB2704A9-87E2-4E82-918D-20B850576D0C}.Release|x64.Build.0 = Release|Any CPU
 		{FB2704A9-87E2-4E82-918D-20B850576D0C}.Release|x86.ActiveCfg = Release|Any CPU
 		{FB2704A9-87E2-4E82-918D-20B850576D0C}.Release|x86.Build.0 = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|x64.Build.0 = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|x64.ActiveCfg = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|x64.Build.0 = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|x86.ActiveCfg = Release|Any CPU
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A}.Release|x86.Build.0 = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|x64.Build.0 = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Debug|x86.Build.0 = Debug|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|x64.ActiveCfg = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|x64.Build.0 = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +99,8 @@ Global
 		{B498CC93-0464-402C-AFC1-EBCF1F9EB73A} = {AB26A024-5AB3-4CF5-91D3-E446B45BB9E4}
 		{B1BDFCAF-D6FE-4F53-9656-30035928BF37} = {50422D1E-1BB3-4A72-ABB9-3E415F8FEC5C}
 		{FB2704A9-87E2-4E82-918D-20B850576D0C} = {E9E434AC-9635-4DF1-808B-4AE377DB8FA6}
+		{E86069E7-91E0-45C0-8692-D4FCEBFCE90A} = {66AB4C82-9003-46F9-A647-CA58A4972A31}
+		{24B10902-D4F1-4F17-95A9-2421010B6FA6} = {66AB4C82-9003-46F9-A647-CA58A4972A31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32227669-A72E-488A-AF14-6A25AEE9B413}

@@ -29,7 +29,7 @@ namespace WpfClient
             var tasks = new Task<bool>[numberOfCalls];
             for (var i = 0; i < numberOfCalls; i++)
             {
-                tasks[i] = CallApi();
+                tasks[i] = CallApiAsync();
             }
 
             await Task.WhenAll(tasks);
@@ -41,7 +41,7 @@ namespace WpfClient
             return new WebApiPerformanceResults(_stopWatch.Elapsed, tasks.Count(t => t.Result), tasks.Count(t => t.Result == false), threadingResults);
         }
 
-        private async Task<bool> CallApi()
+        private async Task<bool> CallApiAsync()
         {
             try
             {

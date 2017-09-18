@@ -20,7 +20,7 @@ namespace AsyncDecompiled
         public static async Task Main()
         {
             var readers = InitializeReaders();
-            var numberOfWords = await Async.CalculateTotalNumberOfWordsAsync(readers);
+            var numberOfWords = await CalculateTotalNumberOfWordsAsync(readers);
             readers.DisposeAll();
             Console.WriteLine($"The {readers.Length} streams contain a total number of {numberOfWords} words.");
             Console.ReadLine();
@@ -38,7 +38,6 @@ namespace AsyncDecompiled
         private static StreamReader InitializeStreamReader(string path)
         {
             return new StreamReader(new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, FileOptions.Asynchronous));
-            //return new StreamReader(path);
         }
 
         public static async Task<int> CalculateTotalNumberOfWordsAsync(IEnumerable<TextReader> readers)
